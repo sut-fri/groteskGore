@@ -82,6 +82,7 @@ html, body {
 
 #title:hover {
 	transform: translateX(0.3em);
+	color: rgb(179, 48, 48);
 }
 
 .d-main {
@@ -89,7 +90,6 @@ html, body {
 	color: white;
 	font-family: Monospace, serif;
 }
-
 
 #parent-bottom {
 	margin-right: 3em;
@@ -121,6 +121,7 @@ html, body {
 
 #about:hover {
 	transform: translateX(0.5em);
+/*	color: rgb(179, 48, 48);*/
 }
 
 .d-bottom {
@@ -180,6 +181,7 @@ html, body {
 
 #title1:hover {
 	transform: translateX(0.3em);
+	color: rgb(179, 48, 48);
 }
 
 #parent-main1 {
