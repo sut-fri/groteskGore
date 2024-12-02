@@ -20,8 +20,8 @@ html, body {
   	padding-left: 3em;
   	padding-bottom: 1em;
   	padding-top: 1em;
-  	border-radius: 3px;
-    border: solid black 3px;
+/*  	border-radius: 3px;
+    border: solid black 3px;*/
     background: rgb(0, 0, 0);
     z-index: 2;
     width: 100vw;
@@ -30,6 +30,7 @@ html, body {
     justify-content: flex-end;
 /*    float: right;
     display: flex;*/
+    text-align: right;
 }
 
 #child-nav {
@@ -54,10 +55,10 @@ html, body {
 .nav:hover {
 	color: black;
 	text-decoration: none;
-	border-radius: 3px;
-	border: solid white 3px;
+/*	border-radius: 3px;
+	border: solid white 3px;*/
     background-color: rgb(255, 255, 255);
-    transform: skewX(-10deg);
+/*    transform: skewX(-10deg);*/
 }
 
 #parent-main {
@@ -100,7 +101,7 @@ html, body {
 #parent-bottom {
 	margin-right: 3em;
 	margin-bottom: 3em;
-/*	margin-top: 5em;*/
+	margin-top: 3em;
 	display: flex;
   	justify-content: flex-end;
   	justify-content: space-between;
