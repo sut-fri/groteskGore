@@ -4,15 +4,22 @@ html, body {
 }
 
 #parent-nav {
-    display: flex;
+    /*display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
-    width: 100%;
-    padding: 1em;
+    align-items: flex-start;*/
+/*    width: 100vw;*/
 /*    border: 2px solid white;*/
     box-sizing: border-box;
-    background-color: black;
-    z-index: 2;
+/*    background-color: black;*/
+    overflow: hidden;
+    position: fixed;
+  	top: 0;
+  	right: 0;
+  	padding-top: 3em;
+  	padding-right: 3em;
+  	padding-left: 3em;
+  	padding-bottom: 1em;
+  	width: auto;
 }
 
 #child-nav {
@@ -26,14 +33,20 @@ html, body {
     color: white;
 /*    border: 2px solid white;*/
     text-decoration: none;
-    padding: 2px;
+    padding: 5px;
+    float: right;
+/*    transform: skewX(-10deg);*/
+    border-radius: 3px;
+    border: solid black 3px;
+    background: rgb(0, 0, 0, 0.9);
 }
 
 .nav:hover {
-	background: white;
 	color: black;
 	text-decoration: none;
 	border-radius: 3px;
+	border: solid white 3px;
+    background-color: rgb(255, 255, 255, 0.9);
 }
 
 #parent-main {
@@ -41,9 +54,8 @@ html, body {
 	display: flex;
   	align-items: center;
   	justify-content: flex-start;
-  	width: 100vw;
+/*  	width: 100vw;*/
   	height: 100vh;
-  	z-index: 1;
 }
 
 #child-main {
@@ -67,7 +79,7 @@ html, body {
 	transform: translateX(0.3em);
 }
 
-.d {
+.d-main {
 	font-size: 3em;
 	color: white;
 	font-family: Monospace, serif;
@@ -76,13 +88,14 @@ html, body {
 
 #parent-bottom {
 	margin: 3em;
-	padding-left: 5em;
-/*	padding-right: 3em;*/
+/*	padding-top: 5em;*/
 	display: flex;
-  	justify-content: center;
-  	width: 100vw;
+  	justify-content: flex-end;
+/*  	justify-content: space-between;*/
+  	align-items: flex-start;
+/*  	width: 30vw;*/
   	height: fit-content;
-  	z-index: 1;
+/*  	justify-content: space-between;*/
 /*  	border: 2px solid white;*/
 }
 
@@ -93,11 +106,37 @@ html, body {
 }
 
 #about {
+	width: 50vw;
 	color: white;
-	font-size: 5em;
+	font-size: 3em;
 	font-family: Helvetica, sans-serif;
 	background-color: transparent;
-	line-height: 0.3em;
-	margin-left: 0.5em;
+/*	line-height: 0.3em;*/
+	text-decoration: none;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	border: none;
+}
+
+#about:hover {
+	transform: translateX(0.5em);
+}
+
+.d-bottom {
+	font-size: 1.5em;
+	color: white;
+	font-family: Monospace, serif;
+}
+
+#cat-container {
+	position: relative;
+	left: 0;
+}
+
+#blink {
+	overflow: hidden;
+    position: absolute;
+  	bottom: 0;
+  	left: 0;
 }
 
