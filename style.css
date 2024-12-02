@@ -34,8 +34,7 @@ html, body {
 /*    border: 2px solid white;*/
     text-decoration: none;
     padding: 5px;
-    float: right;
-/*    transform: skewX(-10deg);*/
+    float: right
     border-radius: 3px;
     border: solid black 3px;
     background: rgb(0, 0, 0, 0.9);
@@ -47,6 +46,7 @@ html, body {
 	border-radius: 3px;
 	border: solid white 3px;
     background-color: rgb(255, 255, 255, 0.9);
+    transform: skewX(-10deg);
 }
 
 #parent-main {
