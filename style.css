@@ -15,16 +15,27 @@ html, body {
     position: fixed;
   	top: 0;
   	right: 0;
-  	padding-top: 3em;
+/*  	margin-top: 3em;*/
   	padding-right: 3em;
   	padding-left: 3em;
   	padding-bottom: 1em;
-  	width: auto;
+  	padding-top: 1em;
+  	border-radius: 3px;
+    border: solid black 3px;
+    background: rgb(0, 0, 0);
+    z-index: 2;
+    width: 100vw;
+/*    border: 2px solid white;*/
+    display: flex;
+    justify-content: flex-end;
+/*    float: right;
+    display: flex;*/
 }
 
 #child-nav {
     display: flex;
     gap: 5em;
+
 }
 
 .nav {
@@ -35,9 +46,9 @@ html, body {
     text-decoration: none;
     padding: 5px;
     float: right
-    border-radius: 3px;
+    /*border-radius: 3px;
     border: solid black 3px;
-    background: rgb(0, 0, 0, 0.9);
+    background: rgb(0, 0, 0, 0.9);*/
 }
 
 .nav:hover {
@@ -45,7 +56,7 @@ html, body {
 	text-decoration: none;
 	border-radius: 3px;
 	border: solid white 3px;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255);
     transform: skewX(-10deg);
 }
 
@@ -87,14 +98,14 @@ html, body {
 
 
 #parent-bottom {
-	margin: 3em;
-/*	padding-top: 5em;*/
+	margin-right: 3em;
+	margin-bottom: 3em;
+/*	margin-top: 5em;*/
 	display: flex;
   	justify-content: flex-end;
   	justify-content: space-between;
-  	align-items: flex-start;
-/*  	width: 30vw;*/
-  	height: fit-content;
+  	align-items: flex-end;
+/*  	height: 75vh;*/
 /*  	justify-content: space-between;*/
 /*  	border: 2px solid white;*/
 }
@@ -110,7 +121,7 @@ html, body {
 	color: white;
 	font-size: 3em;
 	font-family: Helvetica, sans-serif;
-	background-color: transparent;
+	background-color: black;
 /*	line-height: 0.3em;*/
 	text-decoration: none;
 	transition: transform 0.3s ease;
@@ -141,8 +152,8 @@ html, body {
 }*/
 
 #blink {
-	float: left;
   	transform: scaleX(-1);
   	margin: 1em;
+  	justify-self: center;
 }
 
