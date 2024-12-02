@@ -91,7 +91,7 @@ html, body {
 /*	padding-top: 5em;*/
 	display: flex;
   	justify-content: flex-end;
-/*  	justify-content: space-between;*/
+  	justify-content: space-between;
   	align-items: flex-start;
 /*  	width: 30vw;*/
   	height: fit-content;
@@ -128,7 +128,7 @@ html, body {
 	font-family: Monospace, serif;
 }
 
-#cat-container {
+/*#cat-container {
 	position: relative;
 	left: 0;
 }
@@ -138,5 +138,11 @@ html, body {
     position: absolute;
   	bottom: 0;
   	left: 0;
+}*/
+
+#blink {
+	float: left;
+  	transform: scaleX(-1);
+  	margin: 1em;
 }
 
